@@ -1,29 +1,102 @@
-<div.container>
-  <header>
-    <img.logo src="./logo.svg" alt="Marko"/>
-  </header>
-  <main>
-    <p>Edit <code>./src/routes/_index/+page.marko</code> and save to reload.</p>
-    <a href="https://markojs.com/docs/getting-started">
-      Learn Marko
-    </a>
-  </main>
+class {
+    onCreate() {
+        this.state = {
+            items: [
+                { title: 'Affordable Protection Plans', description: 'For as little as $19/mo, we\'ll pay for repairs after your manufacturer\'s warranty expires.' },
+                { title: '100% of covered repair costs', description: 'Covers everything from your steering and transmission, down to the fancy tech inside your touchscreen. All you pay is a $50 deductible.' },
+                { title: 'Repair Anywhere', description: 'You choose your mechanic, and we pay them directly for repairs, so you aren\'t stuck chasing down reimbursements.' },
+            ]
+        };
+    }
+}
+
+<div class="container">
+    <div class="header" />
+    <div class="content">
+        <div class="left-content">
+            <for|item| of=state.items>
+                <div class="info">
+                    <h2>${item.title}</h2>
+                    <p>${item.description}</p>
+                </div>
+            </for>
+        </div>
+        <div class="right-content">
+            <form>
+                <div class="form-field">
+                    <input type="text" class="form-input" placeholder="First Name" />
+                </div>
+                <div class="form-field">
+                    <input type="text" class="form-input" placeholder="Last Name" />
+                </div>
+                <div class="form-field">
+                    <input type="email" class="form-input" placeholder="Email Address" />
+                </div>
+                <div class="form-field">
+                    <button type="submit" class="submit-button">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
 </div>
-<mouse-mask/>
 
 style {
-  .container {
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: clamp(1em, 2vw, 2em); 
-    padding: 1em;
-    box-sizing: border-box;
-    height:100%;
-    width:100%;
-  }
-  img.logo {
-    width:12em;
-  }
+    .container {
+        padding: 10px;
+    }
+    .header {
+        background-image: url('header.png');
+        background-size: cover;
+        background-position: center;
+
+        display: flex;
+        height: 400px;
+        align-items: flex-end;
+        justify-content: space-between;
+        color: white;
+    }
+    .content {
+        display: flex;
+        margin-top: 20px;
+    }
+    .left-content {
+        width: 50%;
+    }
+    .info {
+        /* 根据需要添加样式 */
+    }
+    .right-content {
+        width: 50%;
+        /* 根据需要添加样式 */
+    }
+    .form-field {
+        margin-bottom: 1rem;
+    }
+    .form-input {
+        padding: 0.5rem;
+        border: 1px solid #ccc;
+    }
+
+    .submit-button {
+        background-color: #0077CC;
+        color: white;
+        border: none;
+        padding: 0.5rem 1rem;
+        cursor: pointer;
+        display: block;
+        width: 100%;
+    }
+    @media (max-width: 968px) {
+        .content {
+            flex-direction: column;
+        }
+        .left-content, .right-content {
+            width: 100%;
+        }
+        .header {
+            height: 200px;
+            background-position: center right;
+            padding: 10px;
+        }
+    }
 }
