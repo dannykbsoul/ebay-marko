@@ -1,0 +1,157 @@
+{
+  // ========== Visuals ==========
+  "editor.cursorSmoothCaretAnimation": "on", // 启用光标的平滑动画
+  "editor.fontFamily": "Fira Code", // 设置编辑器字体为Fira Code，这是一种流行的编程字体，支持字体连字特性
+  "editor.guides.bracketPairs": "active", // 当活跃时显示括号对指导线，帮助用户更清晰地识别代码块
+  "editor.lineNumbers": "interval", // 设置行号的显示方式为间隔显示，可能是每隔一定行数显示一次行号
+  "editor.renderWhitespace": "boundary", // 设置在边界处渲染空白字符，以便在阅读代码时可以看到空格和制表符
+  "window.autoDetectColorScheme": false, // 自动检测系统的颜色主题（明暗模式），并应用到编辑器
+  "workbench.colorTheme": "Noctis Minimus", // 设置颜色主题为Noctis Minimus，这是一个VS Code的颜色主题，提供了一种暗色的编程环境。
+  "workbench.editor.tabActionLocation": "left", // 设置编辑器标签页操作按钮（如关闭按钮）的位置在左侧
+  "workbench.fontAliasing": "antialiased", // 设置字体平滑为"antialiased"，使字体显示更平滑清晰
+  "workbench.iconTheme": "vscode-icons", // 设置工作台的图标主题为vscode-icons
+  "workbench.list.smoothScrolling": true, // 启用列表（如文件浏览器）的平滑滚动效果
+  "workbench.productIconTheme": "icons-carbon", // 设置VS Code的产品图标主题为"icons-carbon"
+  "workbench.sideBar.location": "left", // 将侧边栏位置设置在左侧
+  "workbench.startupEditor": "welcomePage", // 设置启动时默认打开一个新的未命名文件
+  "workbench.tree.expandMode": "singleClick", // 设置文件树的扩展模式为单击扩展
+  "workbench.tree.indent": 14, // 设置树视图中的缩进量为10像素
+  // ========== Editor ==========
+  "debug.onTaskErrors": "debugAnyway", // 设置在任务出错时仍然尝试调试
+  "diffEditor.ignoreTrimWhitespace": false, // 在比较编辑器中，不忽略行尾空白差异
+  "editor.wordSeparators": "`~!@#%^&*()=+[{]}\\|;:'\",.<>/?", // 定义单词分隔符，这些符号被用来在文本操作时定义单词的边界
+  "editor.find.addExtraSpaceOnTop": false, // 查找操作时，不在编辑器顶部添加额外空间
+  "editor.inlineSuggest.enabled": true, // 启用行内建议，即在输入时自动显示可能的代码补全建议
+  "editor.multiCursorModifier": "ctrlCmd", // 设置多光标操作的修饰键为"ctrlCmd"
+  "editor.suggestSelection": "first", // 设置自动完成的建议默认选择第一个
+  "editor.tabSize": 2, // 设置编辑器中制表符的大小为2个空格
+  "editor.fontSize": 14, // 设置编辑器字体大小为14
+  "editor.indentSize": "tabSize", // 设置缩进大小与tabSize一致，即2个空格
+  "editor.fontLigatures": true, // 启用字体连字功能，这可以使特定的字符序列（如=>和>=）显示为单个连字字符。
+  "editor.codeActionsOnSave": {}, // 空对象表示保存文件时不自动执行额外的代码动作
+  "editor.language.brackets": [], // 这个设置通常用于定义各种编程语言中括号的匹配规则。括号包括圆括号、方括号、花括号等。当设置为一个空数组 [] 时，表示不为任何特定语言自定义括号的匹配规则
+  "editor.formatOnSave": true, // 启用保存文件时自动格式化代码
+  "editor.defaultFormatter": "esbenp.prettier-vscode", // 设置默认格式化工具为esbenp.prettier-vscode，这是一个流行的代码格式化器
+  "editor.formatOnPaste": true, // 启用粘贴内容时自动格式化
+  "editor.formatOnType": true, // 启用输入时自动格式化代码
+  "editor.unicodeHighlight.invisibleCharacters": false, // 不高亮显示不可见的Unicode字符
+  "editor.stickyScroll.enabled": true,
+  "editor.hover.sticky": true, // 启用粘性滚动和悬停，使某些UI元素（如滚动条或悬浮框）在特定条件下保持可见
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false, // 删除或拖放文件时不再弹出确认对话框
+  "files.eol": "\n", // 设置文件的默认行尾字符为\n（换行符）
+  "files.insertFinalNewline": false, // 保存文件时自动在文件末尾添加一个新行
+  "files.simpleDialog.enable": true, // 启用简化的文件对话框
+  "git.autofetch": true, // 启用Git自动获取最新更改
+  "git.confirmSync": false, // 同步更改到远程仓库时不再确认
+  "git.enableSmartCommit": true, // 启用智能提交，允许在没有暂存任何文件的情况下提交
+  "git.untrackedChanges": "separate", // 未跟踪的更改在Git界面中单独显示
+  "scm.diffDecorationsGutterWidth": 2, // 设置源代码管理中差异装饰的宽度为2像素
+  "terminal.integrated.cursorBlinking": true,
+  "terminal.integrated.cursorStyle": "line",
+  "terminal.integrated.fontWeight": "300", // 设置集成终端中的光标闪烁、样式为线条、字体权重为300
+  "terminal.integrated.persistentSessionReviveProcess": "never", // 设置永不恢复终端会话
+  "terminal.integrated.tabs.enabled": true, // 启用终端标签页
+  "workbench.editor.closeOnFileDelete": true, // 文件被删除时自动关闭对应的编辑器标签
+  "workbench.editor.highlightModifiedTabs": true, // 修改过的文件标签高亮显示
+  "workbench.editor.limit.enabled": true,
+  "workbench.editor.limit.perEditorGroup": true,
+  "workbench.editor.limit.value": 5, // 启用编辑器标签的数量限制，每个编辑器组限制为5个
+  "search.exclude": {
+    "**/*.snap": true,
+    "**/*.svg": true,
+    "**/.git": true,
+    "**/.github": false,
+    "**/.nuxt": true,
+    "**/.output": true,
+    "**/.pnpm": true,
+    "**/.vscode": true,
+    "**/.yarn": true,
+    "**/assets": true,
+    "**/bower_components": true,
+    "**/dist/**": true,
+    "**/logs": true,
+    "**/node_modules": true,
+    "**/out/**": true,
+    "**/package-lock.json": true,
+    "**/pnpm-lock.yaml": true,
+    "**/public": true,
+    "**/temp": true,
+    "**/yarn.lock": true,
+    "**/CHANGELOG*": true,
+    "**/LICENSE*": true,
+  },
+  "window.zoomLevel": 1, // 设置窗口的缩放级别为1，这可以轻微放大界面
+  // ==========  Global Level Config, needs to put in User Settings ==========
+  "window.dialogStyle": "custom",
+  "window.nativeTabs": true, // this is great, macOS only
+  "window.title": "${rootName}", // this make tabs more readable
+  "window.titleBarStyle": "custom",
+  "extensions.autoUpdate": "onlyEnabledExtensions",
+  // ESLint config: https://github.com/antfu/eslint-config
+  "eslint.codeAction.showDocumentation": {
+    "enable": true
+  },
+  "eslint.quiet": true,
+  // Silent the stylistic rules in you IDE, but still auto fix them
+  "eslint.rules.customizations": [
+    {
+      "rule": "style/*",
+      "severity": "off"
+    },
+    {
+      "rule": "format/*",
+      "severity": "off"
+    },
+    {
+      "rule": "*-indent",
+      "severity": "off"
+    },
+    {
+      "rule": "*-spacing",
+      "severity": "off"
+    },
+    {
+      "rule": "*-spaces",
+      "severity": "off"
+    },
+    {
+      "rule": "*-order",
+      "severity": "off"
+    },
+    {
+      "rule": "*-dangle",
+      "severity": "off"
+    },
+    {
+      "rule": "*-newline",
+      "severity": "off"
+    },
+    {
+      "rule": "*quotes",
+      "severity": "off"
+    },
+    {
+      "rule": "*semi",
+      "severity": "off"
+    }
+  ],
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "vue",
+    "html",
+    "markdown",
+    "json",
+    "jsonc",
+    "yaml",
+    "toml"
+  ],
+  // I only use Prettier for manually formatting
+  "prettier.enable": false,
+  "prettier.printWidth": 200,
+  "prettier.semi": false,
+  "prettier.singleQuote": true
+}
